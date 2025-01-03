@@ -1,7 +1,5 @@
 # ES4-Labs
-Contains labs from my ES4 class, "Introduction to Digital Logic" (https://www.ece.tufts.edu/es/4/about.html), which was centered on programming an Upduino iCE40 FPGA using VHDL on Lattice Radiant.
-
-#### Each lab folder holds the lab files from Lattice Radiant, my lab report, and the spec provided by my instructor. 
+Contains labs from my ES4 class, "Introduction to Digital Logic" (https://www.ece.tufts.edu/es/4/about.html), which was centered on programming an Upduino iCE40 FPGA using VHDL on Lattice Radiant. Each lab folder holds the lab files from Lattice Radiant, my lab report, and the spec provided by my instructor. 
 
 ### Lab 5 - Building an ALU and displaying the result
 ----------
