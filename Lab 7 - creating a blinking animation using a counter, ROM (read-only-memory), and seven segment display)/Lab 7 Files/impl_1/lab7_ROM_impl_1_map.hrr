@@ -1,0 +1,35 @@
+---------------------------------------------------
+Report for cell top
+   Instance path: top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOLGC	       3.00        100.0
+                                  LUT4	         37        100.0
+                               LUTGATE	          9        100.0
+                                LUTCCU	         28        100.0
+                                 IOREG	          3        100.0
+                                 IOBUF	          7        100.0
+                                PFUREG	         30        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                               counter	          1        78.4
+                                   rom	          1        13.5
+---------------------------------------------------
+Report for cell rom
+   Instance path: top/rom1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOLGC	       3.00        100.0
+                                  LUT4	          5        13.5
+                               LUTGATE	          5        55.6
+                                 IOREG	          3        100.0
+                                PFUREG	          4        13.3
+---------------------------------------------------
+Report for cell counter
+   Instance path: top/counter1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         29        78.4
+                               LUTGATE	          1        11.1
+                                LUTCCU	         28        100.0
+                                PFUREG	         26        86.7

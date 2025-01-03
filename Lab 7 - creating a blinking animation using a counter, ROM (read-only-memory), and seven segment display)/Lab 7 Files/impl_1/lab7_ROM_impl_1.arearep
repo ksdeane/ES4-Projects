@@ -1,0 +1,34 @@
+----------------------------------------------------------------------
+Report for cell top.TECH
+Register bits:  30 of 5280 (0.568%)
+I/O cells:      7
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        14          100.0
+                            FD1P3XZ        30          100.0
+                         HSOSC_CORE         1          100.0
+                              IOL_B         3          100.0
+                               LUT4         6          100.0
+                                 OB         7          100.0
+SUB MODULES
+                            counter         1
+                                rom         1
+                              TOTAL        63
+----------------------------------------------------------------------
+Report for cell rom.v1
+Instance Path : rom1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         4           13.3
+                              IOL_B         3          100.0
+                               LUT4         5           83.3
+                              TOTAL        12
+----------------------------------------------------------------------
+Report for cell counter.v1
+Instance Path : counter1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        14          100.0
+                            FD1P3XZ        26           86.7
+                               LUT4         1           16.7
+                              TOTAL        41
