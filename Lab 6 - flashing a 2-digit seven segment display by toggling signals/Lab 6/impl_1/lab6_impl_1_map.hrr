@@ -1,0 +1,41 @@
+---------------------------------------------------
+Report for cell top
+   Instance path: top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         43        100.0
+                               LUTGATE	         29        100.0
+                                LUTCCU	         14        100.0
+                                 IOBUF	         15        100.0
+                                PFUREG	         13        100.0
+                                   DSP	          1        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                                  dddd	          1        37.2
+---------------------------------------------------
+Report for cell dddd
+   Instance path: top/dddd1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         16        37.2
+                               LUTGATE	         16        55.2
+                                 IOBUF	          6        40.0
+                                   DSP	          1        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                              sevenseg	          1         7.0
+                           sevenseg_U0	          1        16.3
+---------------------------------------------------
+Report for cell sevenseg
+   Instance path: top/dddd1/sevenseg2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          3         7.0
+                               LUTGATE	          3        10.3
+---------------------------------------------------
+Report for cell sevenseg_U0
+   Instance path: top/dddd1/sevenseg1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          7        16.3
+                               LUTGATE	          7        24.1

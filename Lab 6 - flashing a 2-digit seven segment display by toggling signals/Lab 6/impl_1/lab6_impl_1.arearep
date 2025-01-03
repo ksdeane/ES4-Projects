@@ -1,0 +1,44 @@
+----------------------------------------------------------------------
+Report for cell top.TECH
+Register bits:  13 of 5280 (0.246%)
+I/O cells:      9
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2         7          100.0
+                            FD1P3XZ        13          100.0
+                         HSOSC_CORE         1          100.0
+                                 IB         6          100.0
+                               LUT4        28          100.0
+                              MAC16         1          100.0
+                                 OB         9          100.0
+SUB MODULES
+                               dddd         1
+                           sevenseg         1
+                        sevenseg_U0         1
+                              TOTAL        68
+----------------------------------------------------------------------
+Report for cell dddd.v1
+Instance Path : dddd1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                 IB         6          100.0
+                               LUT4        16           57.1
+                              MAC16         1          100.0
+SUB MODULES
+                           sevenseg         1
+                        sevenseg_U0         1
+                              TOTAL        25
+----------------------------------------------------------------------
+Report for cell sevenseg.v1
+Instance Path : dddd1.sevenseg2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         3           10.7
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell sevenseg_U0.v1
+Instance Path : dddd1.sevenseg1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         7           25.0
+                              TOTAL         7
