@@ -1,0 +1,23 @@
+#Start recording tcl command: 10/15/2024 18:15:08
+#Project Location: Z:/es4/lab5; Project name: lab5
+prj_open "Z:/es4/lab5/lab5.rdf"
+prj_run Synthesis -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+#Stop recording: 10/15/2024 20:05:56

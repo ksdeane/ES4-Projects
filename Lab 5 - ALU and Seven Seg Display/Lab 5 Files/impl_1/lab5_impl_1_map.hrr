@@ -1,0 +1,27 @@
+---------------------------------------------------
+Report for cell top
+   Instance path: top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         20        100.0
+                               LUTGATE	         20        100.0
+                                 IOBUF	         17        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                                   alu	          1        65.0
+                              sevenseg	          1        35.0
+---------------------------------------------------
+Report for cell sevenseg
+   Instance path: top/sevenseg1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          7        35.0
+                               LUTGATE	          7        35.0
+---------------------------------------------------
+Report for cell alu
+   Instance path: top/alu1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         13        65.0
+                               LUTGATE	         13        65.0
+                                 IOBUF	          2        11.8

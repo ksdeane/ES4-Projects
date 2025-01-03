@@ -1,0 +1,628 @@
+
+// Verilog netlist produced by program backanno, Version Radiant Software (64-bit) 2023.1.0.43.3
+
+// backanno -o lab5_impl_1_vo.vo -sp High-Performance_1.2V -w -neg -gui lab5_impl_1.udb 
+// Netlist created on Tue Oct 15 19:22:03 2024
+// Netlist written on Tue Oct 15 19:22:08 2024
+// Design is for device iCE40UP5K
+// Design is for package SG48
+// Design is for performance grade High-Performance_1.2V
+
+`timescale 1 ns / 1 ps
+
+module top ( signalC, signalB, signalA, finalResult );
+  input  [1:0] signalC;
+  input  [3:0] signalB;
+  input  [3:0] signalA;
+  output [6:0] finalResult;
+  wire   \alu1.aluresult_3__N_2 , \alu1.aluresult_3__N_3 , 
+         \alu1.aluresult_3__N_1 , \alu1.signalC_c_1 , \alu1.aluresult_2__N_6 , 
+         signalA_c_2, \alu1.signalC_c_0 , signalB_c_2, \aluresult[3] , 
+         signalB_c_1, \alu1.aluresult_1__N_9 , signalA_c_1, signalA_c_0, 
+         signalB_c_0, \aluresult[1] , \aluresult[2] , finalResult_c_0_N_23, 
+         finalResult_c_1, \alu1.aluresult_1__N_8 , \alu1.aluresult_1__N_7 , 
+         finalResult_c_2, finalResult_c_5, finalResult_c_3, finalResult_c_0, 
+         \alu1.aluresult_2__N_4 , \alu1.aluresult_2__N_5 , finalResult_c_6, 
+         finalResult_c_4, signalA_c_3, signalB_c_3;
+
+  alu1_SLICE_0 \alu1.SLICE_0 ( .D1(\alu1.aluresult_3__N_2 ), 
+    .C1(\alu1.aluresult_3__N_3 ), .B1(\alu1.aluresult_3__N_1 ), 
+    .A1(\alu1.signalC_c_1 ), .D0(\alu1.aluresult_2__N_6 ), .C0(signalA_c_2), 
+    .B0(\alu1.signalC_c_0 ), .A0(signalB_c_2), .F0(\alu1.aluresult_3__N_3 ), 
+    .F1(\aluresult[3] ));
+  alu1_SLICE_1 \alu1.SLICE_1 ( .D1(signalB_c_1), .C1(\alu1.aluresult_1__N_9 ), 
+    .B1(\alu1.signalC_c_0 ), .A1(signalA_c_1), .D0(signalA_c_0), 
+    .B0(signalB_c_0), .A0(\alu1.signalC_c_0 ), .F0(\alu1.aluresult_1__N_9 ), 
+    .F1(\alu1.aluresult_2__N_6 ));
+  sevenseg1_SLICE_2 \sevenseg1.SLICE_2 ( .D0(\aluresult[1] ), 
+    .C0(\aluresult[3] ), .B0(\aluresult[2] ), .A0(finalResult_c_0_N_23), 
+    .F0(finalResult_c_1));
+  alu1_SLICE_3 \alu1.SLICE_3 ( .D1(\alu1.aluresult_1__N_8 ), 
+    .C1(\alu1.aluresult_1__N_7 ), .B1(\alu1.signalC_c_1 ), 
+    .A1(\alu1.aluresult_1__N_9 ), .D0(signalB_c_1), .C0(signalA_c_1), 
+    .B0(\alu1.signalC_c_0 ), .F0(\alu1.aluresult_1__N_7 ), .F1(\aluresult[1] ));
+  sevenseg1_SLICE_4 \sevenseg1.SLICE_4 ( .D0(\aluresult[1] ), 
+    .C0(finalResult_c_0_N_23), .B0(\aluresult[2] ), .A0(\aluresult[3] ), 
+    .F0(finalResult_c_2));
+  alu1_SLICE_5 \alu1.SLICE_5 ( .D1(\aluresult[3] ), .C1(\aluresult[2] ), 
+    .B1(\aluresult[1] ), .A1(finalResult_c_0_N_23), .D0(\alu1.signalC_c_1 ), 
+    .C0(signalA_c_0), .B0(\alu1.signalC_c_0 ), .A0(signalB_c_0), 
+    .F0(finalResult_c_0_N_23), .F1(finalResult_c_5));
+  sevenseg1_SLICE_6 \sevenseg1.SLICE_6 ( .D1(\aluresult[1] ), 
+    .C1(finalResult_c_0_N_23), .B1(\aluresult[2] ), .A1(\aluresult[3] ), 
+    .D0(\aluresult[3] ), .C0(\aluresult[2] ), .B0(finalResult_c_0_N_23), 
+    .A0(\aluresult[1] ), .F0(finalResult_c_3), .F1(finalResult_c_0));
+  alu1_SLICE_9 \alu1.SLICE_9 ( .D1(\alu1.signalC_c_1 ), 
+    .C1(\alu1.aluresult_2__N_6 ), .B1(\alu1.aluresult_2__N_4 ), 
+    .A1(\alu1.aluresult_2__N_5 ), .D0(\alu1.signalC_c_0 ), .C0(signalA_c_2), 
+    .A0(signalB_c_2), .F0(\alu1.aluresult_2__N_4 ), .F1(\aluresult[2] ));
+  sevenseg1_SLICE_11 \sevenseg1.SLICE_11 ( .D1(\aluresult[1] ), 
+    .C1(\aluresult[3] ), .B1(\aluresult[2] ), .A1(finalResult_c_0_N_23), 
+    .D0(finalResult_c_0_N_23), .C0(\aluresult[1] ), .B0(\aluresult[3] ), 
+    .A0(\aluresult[2] ), .F0(finalResult_c_6), .F1(finalResult_c_4));
+  alu1_SLICE_12 \alu1.SLICE_12 ( .C1(signalB_c_1), .B1(signalA_c_1), 
+    .A1(\alu1.signalC_c_0 ), .D0(\alu1.signalC_c_0 ), .C0(signalB_c_2), 
+    .A0(signalA_c_2), .F0(\alu1.aluresult_2__N_5 ), 
+    .F1(\alu1.aluresult_1__N_8 ));
+  alu1_SLICE_16 \alu1.SLICE_16 ( .D1(signalA_c_3), .C1(signalB_c_3), 
+    .A1(\alu1.signalC_c_0 ), .C0(signalA_c_3), .B0(signalB_c_3), 
+    .F0(\alu1.aluresult_3__N_2 ), .F1(\alu1.aluresult_3__N_1 ));
+  signalC_0_ \signalC[0]_I ( .PADDI(\alu1.signalC_c_0 ), .signalC0(signalC[0]));
+  signalC_1_ \signalC[1]_I ( .PADDI(\alu1.signalC_c_1 ), .signalC1(signalC[1]));
+  signalB_0_ \signalB[0]_I ( .PADDI(signalB_c_0), .signalB0(signalB[0]));
+  signalB_1_ \signalB[1]_I ( .PADDI(signalB_c_1), .signalB1(signalB[1]));
+  signalB_2_ \signalB[2]_I ( .PADDI(signalB_c_2), .signalB2(signalB[2]));
+  signalB_3_ \signalB[3]_I ( .PADDI(signalB_c_3), .signalB3(signalB[3]));
+  signalA_0_ \signalA[0]_I ( .PADDI(signalA_c_0), .signalA0(signalA[0]));
+  signalA_1_ \signalA[1]_I ( .PADDI(signalA_c_1), .signalA1(signalA[1]));
+  signalA_2_ \signalA[2]_I ( .PADDI(signalA_c_2), .signalA2(signalA[2]));
+  signalA_3_ \signalA[3]_I ( .PADDI(signalA_c_3), .signalA3(signalA[3]));
+  finalResult_0_ \finalResult[0]_I ( .PADDO(finalResult_c_0), 
+    .finalResult0(finalResult[0]));
+  finalResult_1_ \finalResult[1]_I ( .PADDO(finalResult_c_1), 
+    .finalResult1(finalResult[1]));
+  finalResult_2_ \finalResult[2]_I ( .PADDO(finalResult_c_2), 
+    .finalResult2(finalResult[2]));
+  finalResult_3_ \finalResult[3]_I ( .PADDO(finalResult_c_3), 
+    .finalResult3(finalResult[3]));
+  finalResult_4_ \finalResult[4]_I ( .PADDO(finalResult_c_4), 
+    .finalResult4(finalResult[4]));
+  finalResult_5_ \finalResult[5]_I ( .PADDO(finalResult_c_5), 
+    .finalResult5(finalResult[5]));
+  finalResult_6_ \finalResult[6]_I ( .PADDO(finalResult_c_6), 
+    .finalResult6(finalResult[6]));
+endmodule
+
+module alu1_SLICE_0 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+
+  lut4 \alu1/aluresult_3__I_0 ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40001 \alu1/i2_4_lut_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut4 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x4EE4") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40001 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x3AAC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module alu1_SLICE_1 ( input D1, C1, B1, A1, D0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40002 \alu1/i77_3_lut_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40003 \alu1/i11_3_lut ( .A(A0), .B(B0), .C(GNDI), .D(D0), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40002 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xB2E8") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40003 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xEE22") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module gnd ( output PWR0 );
+
+  VLO INST1( .Z(PWR0));
+endmodule
+
+module sevenseg1_SLICE_2 ( input D0, C0, B0, A0, output F0 );
+
+  lut40004 \sevenseg1/finalResult_c_1_I_0_4_lut ( .A(A0), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
+
+  specify
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40004 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0741") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module alu1_SLICE_3 ( input D1, C1, B1, A1, D0, C0, B0, output F0, F1 );
+  wire   GNDI;
+
+  lut40005 \alu1/aluresult_1__I_0_2 ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40006 \alu1/i579_3_lut ( .A(GNDI), .B(B0), .C(C0), .D(D0), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40005 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x74B8") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40006 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFCC0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module sevenseg1_SLICE_4 ( input D0, C0, B0, A0, output F0 );
+
+  lut40007 \sevenseg1/finalResult_c_2_I_0_4_lut ( .A(A0), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
+
+  specify
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40007 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0547") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module alu1_SLICE_5 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+
+  lut40008 \sevenseg1/finalResult_c_5_I_0_4_lut ( .A(A1), .B(B1), .C(C1), 
+    .D(D1), .Z(F1));
+  lut40009 \alu1/i1_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40008 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xE490") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40009 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xA517") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module sevenseg1_SLICE_6 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+
+  lut40010 \sevenseg1/aluresult_1__I_0 ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40011 \sevenseg1/finalResult_c_3_I_0_4_lut ( .A(A0), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40010 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0491") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40011 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x2961") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module alu1_SLICE_9 ( input D1, C1, B1, A1, D0, C0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40012 \alu1/aluresult_2__I_0 ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40013 \alu1/i588_3_lut ( .A(A0), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40012 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x5ACC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40013 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFAA0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module sevenseg1_SLICE_11 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, 
+    F1 );
+
+  lut40014 \sevenseg1/finalResult_c_4_I_0_4_lut ( .A(A1), .B(B1), .C(C1), 
+    .D(D1), .Z(F1));
+  lut40015 \sevenseg1/finalResult_c_6_I_0 ( .A(A0), .B(B0), .C(C0), .D(D0), 
+    .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40014 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xC280") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40015 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0249") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module alu1_SLICE_12 ( input C1, B1, A1, D0, C0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40016 \alu1/i61_3_lut_adj_1 ( .A(A1), .B(B1), .C(C1), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40017 \alu1/i61_3_lut ( .A(A0), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40016 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x9696") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40017 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xA55A") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module alu1_SLICE_16 ( input D1, C1, A1, C0, B0, output F0, F1 );
+  wire   GNDI;
+
+  lut40018 \alu1/i548_3_lut ( .A(A1), .B(GNDI), .C(C1), .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40019 \alu1/i1_2_lut ( .A(GNDI), .B(B0), .C(C0), .D(GNDI), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40018 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFAA0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40019 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x3C3C") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module signalC_0_ ( output PADDI, input signalC0 );
+  wire   GNDI;
+
+  BB_B_B \alu1/signalC_pad[0].bb_inst ( .T_N(GNDI), .I(GNDI), .O(PADDI), 
+    .B(signalC0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (signalC0 => PADDI) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module BB_B_B ( input T_N, I, output O, inout B );
+
+  BB_B INST10( .T_N(T_N), .I(I), .O(O), .B(B));
+endmodule
+
+module signalC_1_ ( output PADDI, input signalC1 );
+  wire   GNDI;
+
+  BB_B_B \alu1/signalC_pad[1].bb_inst ( .T_N(GNDI), .I(GNDI), .O(PADDI), 
+    .B(signalC1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (signalC1 => PADDI) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module signalB_0_ ( output PADDI, input signalB0 );
+  wire   GNDI;
+
+  BB_B_B \signalB_pad[0].bb_inst ( .T_N(GNDI), .I(GNDI), .O(PADDI), 
+    .B(signalB0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (signalB0 => PADDI) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module signalB_1_ ( output PADDI, input signalB1 );
+  wire   GNDI;
+
+  BB_B_B \signalB_pad[1].bb_inst ( .T_N(GNDI), .I(GNDI), .O(PADDI), 
+    .B(signalB1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (signalB1 => PADDI) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module signalB_2_ ( output PADDI, input signalB2 );
+  wire   GNDI;
+
+  BB_B_B \signalB_pad[2].bb_inst ( .T_N(GNDI), .I(GNDI), .O(PADDI), 
+    .B(signalB2));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (signalB2 => PADDI) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module signalB_3_ ( output PADDI, input signalB3 );
+  wire   GNDI;
+
+  BB_B_B \signalB_pad[3].bb_inst ( .T_N(GNDI), .I(GNDI), .O(PADDI), 
+    .B(signalB3));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (signalB3 => PADDI) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module signalA_0_ ( output PADDI, input signalA0 );
+  wire   GNDI;
+
+  BB_B_B \signalA_pad[0].bb_inst ( .T_N(GNDI), .I(GNDI), .O(PADDI), 
+    .B(signalA0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (signalA0 => PADDI) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module signalA_1_ ( output PADDI, input signalA1 );
+  wire   GNDI;
+
+  BB_B_B \signalA_pad[1].bb_inst ( .T_N(GNDI), .I(GNDI), .O(PADDI), 
+    .B(signalA1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (signalA1 => PADDI) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module signalA_2_ ( output PADDI, input signalA2 );
+  wire   GNDI;
+
+  BB_B_B \signalA_pad[2].bb_inst ( .T_N(GNDI), .I(GNDI), .O(PADDI), 
+    .B(signalA2));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (signalA2 => PADDI) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module signalA_3_ ( output PADDI, input signalA3 );
+  wire   GNDI;
+
+  BB_B_B \signalA_pad[3].bb_inst ( .T_N(GNDI), .I(GNDI), .O(PADDI), 
+    .B(signalA3));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (signalA3 => PADDI) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module finalResult_0_ ( input PADDO, output finalResult0 );
+  wire   VCCI;
+
+  BB_B_B \finalResult_pad[0].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), 
+    .B(finalResult0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => finalResult0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module vcc ( output PWR1 );
+
+  VHI INST1( .Z(PWR1));
+endmodule
+
+module finalResult_1_ ( input PADDO, output finalResult1 );
+  wire   VCCI;
+
+  BB_B_B \finalResult_pad[1].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), 
+    .B(finalResult1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => finalResult1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module finalResult_2_ ( input PADDO, output finalResult2 );
+  wire   VCCI;
+
+  BB_B_B \finalResult_pad[2].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), 
+    .B(finalResult2));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => finalResult2) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module finalResult_3_ ( input PADDO, output finalResult3 );
+  wire   VCCI;
+
+  BB_B_B \finalResult_pad[3].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), 
+    .B(finalResult3));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => finalResult3) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module finalResult_4_ ( input PADDO, output finalResult4 );
+  wire   VCCI;
+
+  BB_B_B \finalResult_pad[4].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), 
+    .B(finalResult4));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => finalResult4) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module finalResult_5_ ( input PADDO, output finalResult5 );
+  wire   VCCI;
+
+  BB_B_B \finalResult_pad[5].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), 
+    .B(finalResult5));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => finalResult5) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module finalResult_6_ ( input PADDO, output finalResult6 );
+  wire   VCCI;
+
+  BB_B_B \finalResult_pad[6].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), 
+    .B(finalResult6));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => finalResult6) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
